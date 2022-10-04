@@ -62,60 +62,46 @@
 
     <ImageButton
         android:id="@+id/imageButton12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="123dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton18"
         app:srcCompat="@drawable/postres__1_" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
-        android:layout_width="116dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton15"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
-        app:srcCompat="@drawable/alcohol" />
-
-    <ImageButton
         android:id="@+id/imageButton14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="113dp"
+        android:layout_height="86dp"
         android:layout_marginStart="83dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toEndOf="@+id/imageButton12"
         app:layout_constraintTop_toBottomOf="@+id/imageButton17"
         app:srcCompat="@drawable/karne" />
 
     <ImageButton
         android:id="@+id/imageButton15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="123dp"
+        android:layout_height="88dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton14"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ensalada" />
 
     <ImageButton
         android:id="@+id/imageButton17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="60dp"
+        android:layout_width="106dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:srcCompat="@drawable/bebida__1_" />
@@ -124,10 +110,78 @@
         android:id="@+id/imageButton18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:srcCompat="@drawable/vegano" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="123dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/alcohol" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="19dp"
+        android:text="Comida Vegana"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton18"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="21dp"
+        android:text="Bebida"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton14"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton17"
+        tools:layout_editor_absoluteX="248dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Postres"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        tools:layout_editor_absoluteX="77dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Carnes"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton14"
+        tools:layout_editor_absoluteX="267dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Vinos"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Ensaladas"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton15"
+        tools:layout_editor_absoluteX="264dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
