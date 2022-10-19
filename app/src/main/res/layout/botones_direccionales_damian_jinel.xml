@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="418dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoa" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="412dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="431dp"
+        android:layout_marginBottom="133dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Ingreso_Menu"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="Menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="menu"/>
+
+        <Button
+            android:id="@+id/ingreso_Listas"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="-48dp"
+            android:text="listas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="lista"/>
+
+        <Button
+            android:id="@+id/Ingreso_Perfil"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:text="Perfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ingreso_Menu"
+            android:onClick="perfil"/>
+
+        <Button
+            android:id="@+id/Ingreso_Promo"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="-48dp"
+            android:text="Promos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingreso_Listas"
+            android:onClick="promo"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
