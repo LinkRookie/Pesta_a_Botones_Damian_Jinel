@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Inicio">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -26,13 +26,16 @@
             android:layout_height="wrap_content"
             android:rotation="360"
             android:rotationY="-360"
-            android:text="Iniciar Sesion" />
+            android:text="Iniciar Sesion"
+            android:onClick="iniciar_sesion"/>
+
 
         <Button
             android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:text="Registrarse" />
+            android:text="Registrarse"
+            android:onClick="registro"/>
     </LinearLayout>
 
     <ImageView

@@ -17,7 +17,7 @@
             android:name=".Ensaladas"
              />
         <activity
-            android:name=".comida_no_carne"
+            android:name=".comida_vegana"
              />
         <activity
             android:name=".Carnes"
@@ -29,16 +29,16 @@
             android:name=".Vinos"
             />
         <activity
-            android:name=".Listas"
+            android:name=".Postres"
             />
         <activity
             android:name=".Perfil"
             />
         <activity
-            android:name=".Promos"
+            android:name=".Lista"
              />
         <activity
-            android:name=".HOME"
+            android:name=".MENU"
              />
         <activity
             android:name=".Registro"
@@ -47,7 +47,7 @@
             android:name=".iniciar_sesion"
              />
         <activity
-            android:name=".MainActivity"
+            android:name=".Inicio"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

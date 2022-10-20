@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Promos">
+    tools:context=".Lista">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -16,46 +16,45 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="129dp"
+            android:id="@+id/boton_menu"
+            android:layout_width="154dp"
             android:layout_height="match_parent"
             android:foregroundTintMode="src_in"
+            android:onClick="menu"
             app:srcCompat="@android:drawable/ic_menu_add" />
 
+
         <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="88dp"
+            android:id="@+id/boton_promo"
+            android:layout_width="128dp"
             android:layout_height="match_parent"
             android:backgroundTint="#A5A4A4"
             app:srcCompat="@android:drawable/ic_input_get" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="73dp"
+            android:id="@+id/boton_perfil"
+            android:layout_width="128dp"
             android:layout_height="match_parent"
-            app:srcCompat="@android:drawable/checkbox_on_background" />
-
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="124dp"
-            android:layout_height="match_parent"
+            android:onClick="perfil"
             app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="323dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="60dp"
+        android:layout_width="414dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="44dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView15"
-            android:layout_width="311dp"
+            android:layout_width="match_parent"
             android:layout_height="149dp"
             app:srcCompat="@drawable/promo1" />
     </LinearLayout>
@@ -64,11 +63,12 @@
         android:id="@+id/imageButton12"
         android:layout_width="123dp"
         android:layout_height="86dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton18"
-        app:srcCompat="@drawable/postres__1_" />
+        app:srcCompat="@drawable/postres__1_"
+        android:onClick="postres"/>
 
     <ImageButton
         android:id="@+id/imageButton14"
@@ -81,20 +81,22 @@
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toEndOf="@+id/imageButton12"
         app:layout_constraintTop_toBottomOf="@+id/imageButton17"
-        app:srcCompat="@drawable/karne" />
+        app:srcCompat="@drawable/karne"
+        android:onClick="carne"/>
 
     <ImageButton
         android:id="@+id/imageButton15"
         android:layout_width="123dp"
         android:layout_height="88dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton14"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ensalada" />
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/ensalada"
+        android:onClick="ensalada"/>
 
     <ImageButton
         android:id="@+id/imageButton17"
@@ -104,84 +106,99 @@
         android:layout_marginEnd="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:srcCompat="@drawable/bebida__1_" />
-
-    <ImageButton
-        android:id="@+id/imageButton18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:srcCompat="@drawable/vegano" />
+        app:srcCompat="@drawable/bebida__1_"
+        android:onClick="bebidas"/>
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="123dp"
         android:layout_height="88dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/alcohol" />
+        app:srcCompat="@drawable/alcohol"
+        android:onClick="vinos"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
+        android:layout_marginStart="44dp"
         android:layout_marginBottom="19dp"
         android:text="Comida Vegana"
         app:layout_constraintBottom_toTopOf="@+id/imageButton12"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton18"
-        tools:layout_editor_absoluteX="44dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="120dp"
         android:layout_marginBottom="21dp"
         android:text="Bebida"
         app:layout_constraintBottom_toTopOf="@+id/imageButton14"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton17"
-        tools:layout_editor_absoluteX="248dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton17" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
         android:layout_marginTop="12dp"
         android:text="Postres"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
-        tools:layout_editor_absoluteX="77dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
+        android:layout_marginEnd="100dp"
         android:text="Carnes"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton14"
-        tools:layout_editor_absoluteX="267dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton14" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"
         android:text="Vinos"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:layout_editor_absoluteX="76dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
+        android:layout_marginEnd="83dp"
         android:text="Ensaladas"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton15"
-        tools:layout_editor_absoluteX="264dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton15" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton17"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/vegano__1_"
+        android:onClick="vegano"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
